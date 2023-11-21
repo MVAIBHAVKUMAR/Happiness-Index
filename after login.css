@@ -1,0 +1,94 @@
+body {
+    margin: 150px 0; /* Add space at the top and bottom */
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('afterlogin.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: inline-block;
+    background: #1F4753;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome {
+    font-size: 24px;
+    display: inline-block;
+    background: #1F4753;
+    margin-bottom: 10px;
+    background: none;
+}
+
+.test-count {
+    display: inline-block;
+    background: #1F4753;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    background: none;
+}
+
+.take-test {
+    margin-bottom: 30px;
+    background: none;
+    color: #CB7930;
+
+}
+
+.test-button {
+    display: inline-block;
+    background: #CB7930;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.test-button:hover {
+    background: #174149;
+}
+
+.scores-table {
+    width: 100%;
+    background: #1F4753;
+    color: #fff;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.scores-table th, .scores-table td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #1F4753;
+}
+
+.scores-table th {
+    background-color: #1F4753;
+    color: #fff;
+    background: none;
+}
+
+.scores-table td a {
+    background: #1F4753;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    background-size: auto;
+}
+
+.scores-table td a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('ResultFinal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.result-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bar-graph {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.bar {
+    background-color: #1F4753;
+    width: 40px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.bar::after {
+    content: attr(data-percentage);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #1F4753;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.circular-score {
+    display: inline-block;
+    font-size: 18px;
+    background: #1F4753;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.assistant-button,
+.tools-button {
+    background: #1F4753;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}

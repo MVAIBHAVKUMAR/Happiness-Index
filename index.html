@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:700">
+    <style>
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('planet.jpg') no-repeat center bottom; /* Adjust background positioning */
+            background-size: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 30%; /* Adjust this value to position the text at the bottom */
+            left: 56.5%;
+            transform: translate(-50%, 0);
+            color: #1F4753;
+        }
+
+        .btn {
+            
+            position: absolute;
+            bottom: 0%; /* Adjust the desired vertical position */
+            left: 40%; /* Adjust the desired horizontal position */
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fff;
+            color: #1F4753;
+            text-decoration: none;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 14px;
+            animation: showButton 1s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            
+            
+        }
+
+        .btn:hover {
+            background: #1F4753;
+            color: #fff;
+        }
+
+        /* Animation */
+        @keyframes showTopText {
+            0% {
+                transform: translate3d(0, 100%, 0);
+            }
+            40%, 60% {
+                transform: translate3d(0, 50%, 0);
+            }
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes showBottomText {
+            0% {
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        /* New animation for "Evaluate And Plan Your Journey" */
+        @keyframes moveUp {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(12%); /* Adjust the amount to move up */
+            }
+        }
+
+        .animated-title {
+            color: #222;
+            font-family: Roboto, Arial, Georgia, 'Times New Roman', Times, serif;
+            height: 50vh; /* Adjust the height of the title container */
+            left: 50%;
+            position: absolute;
+            bottom: 10%; /* Adjust this value to position the title container at the bottom */
+            transform: translate(-50%, 0);
+            width: 90vmin;
+        }
+
+        .animated-title > div {
+            height: 50%;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+        }
+
+        .animated-title > div div {
+            font-size: 08vmin; /* Reduce the font size */
+            padding: 2vmin 0;
+            position: absolute;
+        }
+
+        .animated-title > div div span {
+            display: block;
+        }
+
+        .animated-title > div.text-top {
+            border-bottom: 1vmin solid #1F4753;
+            top: 0;
+        }
+
+        .animated-title > div.text-top div {
+            animation: showTopText 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            bottom: 0;
+            transform: translate(0, 100%);
+        }
+
+        .animated-title > div.text-top div span.animated-text {
+            animation: moveUp 1s;
+            animation-delay: 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animated-title > div.text-bottom {
+            bottom: 0;
+        }
+
+        .animated-title > div.text-bottom div {
+            animation: showBottomText 0.5s;
+            animation-delay: 3.5s; /* Delay after the showTopText animation */
+            animation-fill-mode: forwards;
+            top: 0;
+            transform: translate(0, -100%);
+        }
+
+        /* Apply the showButton animation to the button */
+        @keyframes showButton {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .btn.animated-button {
+            animation: showButton 1s; /* Adjust duration as needed */
+            animation-delay: 4s; /* Delay after the showBottomText animation */
+            animation-fill-mode: forwards;
+            display: inline-block; /* Show the button after animation */
+        } 
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="hero-text">
+            <div class="animated-title">
+                <div class="text-top">
+                    <div>
+                        <span class="animated-text">Happiness Planet:</span>
+                    </div>
+                </div>
+                <div class="text-bottom">
+                    <div>
+                        <span class="animated-text">Evaluate And Plan Your Journey</span>
+                    </div>
+                </div>
+                <div class="text-bottom">
+                    <div>
+                        <a href="./CHOs.html" class='btn animated-button'>Get Into The Planet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

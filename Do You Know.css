@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('Do\ You\ Know.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.fact {
+    animation: fadeIn 2s;
+}
+
+h2 {
+    font-size: 24px;
+    color: #1F4753;
+}
+
+#fact-text {
+    font-size: 18px;
+    color: #333;
+}
+
+a {
+    background: #1F4753;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0; /* Add some space at the bottom */
+    transition: background 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background: #174149; /* Change the background color on hover */
+    transform: scale(1.05); /* Scale up the button on hover */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

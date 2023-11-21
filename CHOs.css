@@ -1,0 +1,93 @@
+/* Reset default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('CHO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center; /* Center-align the content */
+}
+
+.cho-container {
+    display: flex;
+    justify-content: center; /* Center-align the CHOs */
+    gap: 160px; /* Add some horizontal space between CHOs */
+    padding: 120px;
+}
+
+/* Style for individual CHO circles */
+.cho {
+    width: 350px; /* Set the width and height to create circles */
+    height: 450px; /* Adjust the size as needed */
+    border: 2px solid #ccc;
+    border-radius: 50%; /* Make the CHO circles circular */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+/* Hover effect to scale up CHO on mouseover */
+.cho:hover {
+    transform: scale(1.1);
+}
+
+/* Style for CHO images */
+.cho img {
+    width: 350px; /* Adjust the width to fit within the circles */
+    height: 450px;
+    border-radius: 50%; /* Make the images circular */
+}
+
+/* Style for CHO name */
+.cho h1 {
+    font-size: 18px; /* Adjust the font size */
+    margin: 40px 0;
+    background: #1F4753; /* Background color for the text */
+    display: inline-block;
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 50%; /* Circular background */
+}
+.cho h2 {
+    font-size: 18px; /* Adjust the font size */
+    margin: 40px 0;
+    background: #1F4753; /* Background color for the text */
+    display: inline-block;
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 50%; /* Circular background */
+}
+
+/* Style for CHO details (role, achievements, and bio) */
+.cho p {
+    font-size: 14px; /* Adjust the font size */
+    margin: 10px 0;
+    background: #1F4753; /* Background color for the text */
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 50%; /* Circular background */
+}
+
+/* Style for the "Explore the Planet" button */
+.explore-button {
+    padding: 50px;
+    margin: 20px 0; /* Add space at the bottom of the page */
+    background: #1F4753; /* Background color for the button */
+    border-radius: 50%; /* Circular background */
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+.explore-button a {
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the font size */
+}
+
+/* Hover effect to scale up "Explore the Planet" button on mouseover */
+.explore-button:hover {
+    transform: scale(1.1);
+}
